@@ -1,0 +1,124 @@
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    padding: 20px 20px 40px 20px;
+    gap: 50px;
+}
+
+.image {
+    margin: 0 auto;
+    min-width: 150px;
+    max-width: 400px;
+}
+
+.title {
+    font-family: 'Suse';
+    font-size: 60px;
+    color: #004658;
+    margin-top: -70px;
+}
+
+.subtitle {
+    font-family: 'Suse';
+    font-size: 16px;
+    color: #004658;
+}
+
+.number {
+    font-family: 'Suse';
+    font-size: 40px;
+    font-weight: bold;
+    color: #004658;
+}
+
+.cta {
+    font-family: 'Suse';
+    border-radius: 24px;
+    background: #004658;
+    font-size: 16px;
+    color: white;
+    padding: 14px 28px;
+    cursor: pointer;
+}
+
+.card {
+    width: 220px;
+    background: white;
+    border: 1px solid #004658;
+    padding: 16px;
+    border-radius: 30px;
+    text-align: center;
+    gap: 4px;
+}
+
+.showcaseContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+// modal
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.modalImage {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.modalTitle {
+    //width: 280px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.modalSubtitle {
+    text-align:  center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.buttonsContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.choiceButton {
+    border-radius: 24px;
+    background: #004658;
+    font-size: 18px;
+    color: white;
+    padding: 14px 28px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.modalHeader {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modalFooter {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modalSocial {
+    margin-top: 28px;
+}
