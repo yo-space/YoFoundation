@@ -7,6 +7,8 @@ export default function Home() {
   return (
       <>
           <Head>
+              <title>YoFoundation - we receive by giving</title>
+              <link rel="icon" href="./favicon/favicon.ico" />
               <link rel="preconnect" href="https://fonts.googleapis.com"/>
               <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
               <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet"/>
