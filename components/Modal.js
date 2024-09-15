@@ -3,9 +3,16 @@ import styles from "../styles/MainContent.module.scss";
 import {FaInstagram} from "react-icons/fa";
 import React from "react";
 import {FaX} from "react-icons/fa6";
+import { CSSTransition } from 'react-transition-group';
 
 export const InterestModal = ({ isOpen, onClose }) => {
-    return <Modal
+    return <CSSTransition
+        in={isOpen}
+        timeout={300}
+        classNames="fade"
+        unmountOnExit
+    >
+        <Modal
         isOpen={isOpen}
         onRequestClose={onClose}
         style={{
@@ -26,18 +33,24 @@ export const InterestModal = ({ isOpen, onClose }) => {
                 <FaX size={14} color={'#686868'} onClick={onClose} />
             </div>
             <div>
-                <img className={styles.modalImage} src={'/images/logo.png'}/>
-                <h1 className={styles.modalTitle}>Thank you!</h1>
-                <p className={styles.modalSubtitle}>We appreciate your interest! <br/> You can support us in several ways:</p>
+                <img
+                    data-aos="fade-down"
+                    className={styles.modalImage}
+                    src={'/images/logo.png'}
+                />
+                <h1 data-aos="zoom-in" className={styles.modalTitle}>Thank you!</h1>
+                <p data-aos="zoom-in" className={styles.modalSubtitle}>
+                    We appreciate your interest! <br/> You can support us in several ways:
+                </p>
             </div>
 
-            <div className={styles.buttonsContainer}>
+            <div data-aos="zoom-in" className={styles.buttonsContainer}>
                 <button className={styles.choiceButton}>Direct donation</button>
                 <div className={styles.choiceSeparator}>or</div>
                 <button className={styles.choiceButton}>Shop in YoStore</button>
             </div>
 
-            <div className={styles.modalFooter}>
+            <div data-aos="fade-up" className={styles.modalFooter}>
                 <p>
                     Wait! Cannot afford now? <br /><br />
                     No worries, no pressure. Even your subscription and like matter.<br />
@@ -49,4 +62,5 @@ export const InterestModal = ({ isOpen, onClose }) => {
             </div>
         </div>
     </Modal>
+    </CSSTransition>
 }

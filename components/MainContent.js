@@ -16,26 +16,28 @@ const MainContent = () => {
 
     return <section className={styles.main}>
         <div>
-            <img className={styles.image} src={'/images/logo.png'} />
-            <h1 className={styles.title}>
-                YoFoundation
-            </h1>
-            <p className={styles.subtitle}>
-                We receive by giving.
-            </p>
+            <img data-aos="fade-down" className={styles.image} src={'/images/logo.png'} />
+            <div data-aos="zoom-in">
+                <h1 className={styles.title}>
+                    YoFoundation
+                </h1>
+                <p className={styles.subtitle}>
+                    We receive by giving.
+                </p>
+            </div>
         </div>
 
         <div className={styles.showcaseContainer}>
-            <div className={styles.card}>
+            <div data-aos="fade-right" className={styles.card}>
                 <div className={styles.number}>$2800+</div>
                 <div className={styles.subtitle}>invested in kindness</div>
             </div>
-            <div className={styles.card}>
+            <div data-aos="fade-left" className={styles.card}>
                 <div className={styles.number}>50+</div>
                 <div className={styles.subtitle}>happier people</div>
             </div>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-offset="1">
             <button
                 className={styles.cta}
                 onClick={onModalOpen}
