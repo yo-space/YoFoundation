@@ -10,13 +10,14 @@ export const InterestModal = ({ isOpen, onClose }) => {
         onRequestClose={onClose}
         style={{
             overlay: {
-                backgroundColor: 'rgba(0,70,88,0.52)'
+                backgroundColor: 'rgba(0,70,88,0.52)',
             },
             content: {
                 minWidth: 300,
                 maxWidth: 550,
                 borderRadius: 20,
-                margin: '0 auto'
+                margin: '0 auto',
+                inset: 0,
             }
         }}
     >
@@ -32,7 +33,7 @@ export const InterestModal = ({ isOpen, onClose }) => {
 
             <div className={styles.buttonsContainer}>
                 <button className={styles.choiceButton}>Direct donation</button>
-                <span>or</span>
+                <div className={styles.choiceSeparator}>or</div>
                 <button className={styles.choiceButton}>Shop in YoStore</button>
             </div>
 
