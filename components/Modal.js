@@ -39,9 +39,9 @@ export const InterestModal = ({ isOpen, onClose }) => {
 
             <div className={styles.modalFooter}>
                 <p>
-                    Cannot afford now? <br /><br />
+                    Wait! Cannot afford now? <br /><br />
                     No worries, no pressure. Even your subscription and like matter.<br />
-                    Let's stay in touch:
+                    Let's stay in touch and build the community:
                 </p>
                 <div className={styles.modalSocial}>
                     <FaInstagram color={'#0e4557'} size={32} />
